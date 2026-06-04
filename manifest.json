@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Кино-Редиректор",
+  "version": "1.0",
+  "description": "Перенаправляет с Кинопоиска на Кинокино",
+  "permissions": [
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  }
+}
