@@ -15,7 +15,16 @@ document.getElementById('redirectBtn').addEventListener('click', async () => {
             
             // Закрываем маленькое окошко расширения
             window.close();
-        } else {
+        }
+        else if (currentUrl.includes('youtube')) {
+            let fileUrl = chrome.runtime.getURL('icond.png');     
+            chrome.tabs.create({ url: fileUrl }, (tab) => {
+                alert('Т̶̢̢̧̡̛̖͍̺͚̼̗̙̼̥̣̯̹̰̝̹̑ͮ̓͗̌̽̍̌̏̀̐́̓̓̕͢͜͡ͅы͎̳͓̱͇͊͊͟ п͎̯̼̑ͩ̓̾̕͘͢͡ͅр̶̼͟͠_̛̛̞̀̿̍ͯ̀̇͟о̳̎к̴̴̶̵̦̘̤̣͙̘͍̻̫̰͎͗̂ͣ̏̑͌͂́̂ͮ͆ͤ̈̄͘͘̚͢͢л̩̠͈̥ͤͪͩ_̢̛̯̗̺͙̣̭̱̹͎ͪ̽ͫ̽̄̔ͥ̄̌̎̈͌̇ͩ̈̈̚͢͜͡ͅя͖̮͍̹̞̝́́̇̈́т̸̧̛̻̲̤͙̯̦̫̣ͦ̔̊̋ͤ̉̃ͭ͋͋͊͂ͦ́́̚͟͟͝͞͡');
+                window.close();
+            });             
+         }         
+        
+        else {
             alert('Вы не на сайте Кинопоиск!');
         }
     }
