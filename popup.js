@@ -19,10 +19,17 @@ document.getElementById('redirectBtn').addEventListener('click', async () => {
         else if (currentUrl.includes('vk.com')) {
             let fileUrl = chrome.runtime.getURL('icond.png');     
             chrome.tabs.create({ url: fileUrl }, (tab) => {
-               alert('Т̶̢̢̧̡̛̖͍̺͚̼̗̙̼̥̣̯̹̰̝̹̑ͮ̓͗̌̽̍̌̏̀̐́̓̓̕͢͜͡ͅы͎̳͓̱͇͊͊͟ п͎̯̼̑ͩ̓̾̕͘͢͡ͅр̶̼͟͠_̛̛̞̀̿̍ͯ̀̇͟о̳̎к̴̴̶̵̦̘̤̣͙̘͍̻̫̰͎͗̂ͣ̏̑͌͂́̂ͮ͆ͤ̈̄͘͘̚͢͢л̩̠͈̥ͤͪͩ_̢̛̯̗̺͙̣̭̱̹͎ͪ̽ͫ̽̄̔ͥ̄̌̎̈͌̇ͩ̈̈̚͢͜͡ͅя͖̮͍̹̞̝́́̇̈́т̸̧̛̻̲̤͙̯̦̫̣ͦ̔̊̋ͤ̉̃ͭ͋͋͊͂ͦ́́̚͟͟͝͞͡');
+               alert('ты҉ п҉ро҉кл҉ят҉ ');
                window.close();
             });           
-         }         
+         }    
+        else if (currentUrl.includes('market.dota2')) {
+            let fileUrl = chrome.runtime.getURL('iconz.png');     
+            chrome.tabs.create({ url: fileUrl }, (tab) => {
+               alert('и̶т̶с̶а̶п̶с̶ е̶н̶ о̶г̶Е̶');
+               window.close();
+            });          
+            }     
         
         else {
             alert('Вы не на сайте Кинопоиск!');
